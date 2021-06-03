@@ -1,0 +1,112 @@
+version: 1.2
+workflows:
+ - name: viral_refbased_assembly
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_viral_refbased_assembly.wdl
+   testParameterFiles:
+    - empty.json
+ - name: sc2_pubRepo_submission
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_sc2_pubRepo_submission.wdl
+   testParameterFiles:
+    - empty.json
+ - name: clearlabs_viral_refbased_assembly
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_clearlabs_viral_refbased_assembly.wdl
+   testParameterFiles:
+    - empty.json
+ - name: ont_sc2_pubRepo_submission
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_ont_sc2_pubRepo_submission.wdl
+   testParameterFiles:
+    - empty.json
+ - name: genomic_cluster_analysis
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_genomic_cluster_analysis.wdl
+   testParameterFiles:
+    - empty.json
+ - name: sc2_batch_submission
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_sc2_batch_submission.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Titan_ClearLabs
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_titan_clearlabs.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Titan_ONT
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_titan_ont.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Titan_Illumina_PE
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_titan_illumina_pe.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Titan_Illumina_SE
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_titan_illumina_se.wdl
+   testParameterFiles:
+    - empty.json
+ - name: sc2_pubRepo_prep_se
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_sc2_pubRepo_prep_se.wdl
+   testParameterFiles:
+    - empty.json
+ - name: sc2_pubRepo_prep_pe
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_sc2_pubRepo_prep_pe.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Mercury_PE_Prep
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_mercury_pe_prep.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Mercury_SE_Prep
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_mercury_se_prep.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Mercury_Batch
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_mercury_batch.wdl
+   testParameterFiles:
+    - empty.json
+ - name: SC2_nextstrain
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_sarscov2_nextstrain.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Titan_Augur_Prep
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_titan_augur_prep.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Titan_Augur_Run
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_titan_augur_run.wdl
+   testParameterFiles:
+    - empty.json
+ - name: Pangolin_Update
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_pangolin_update.wdl
+   testParameterFiles:
+    - empty.json
+ - name: VADR_Update
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_vadr_update.wdl
+   testParameterFiles:
+    - empty.json
+ - name: NCBI_Scrub_SE
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_ncbi_scrub_se.wdl
+   testParameterFiles:
+    - empty.json
+ - name: NCBI_Scrub_PE
+   subclass: WDL
+   primaryDescriptorPath: /workflows/wf_ncbi_scrub_pe.wdl
+   testParameterFiles:
+    - empty.json
